@@ -9,6 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      env:
+        NODE_OPTIONS: "--max_old_space_size=4096"
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
       - uses: pnpm/action-setup@v2
