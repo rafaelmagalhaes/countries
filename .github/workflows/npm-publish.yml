@@ -3,7 +3,8 @@ name: Publish package on NPM
 on:
   release:
     types: [created]
-
+  push:
+    branches: [ "main" ]
 jobs:
   build:
     runs-on: ubuntu-latest
