@@ -1,0 +1,38 @@
+{
+  "name": "@rrrm/countries",
+  "version": "0.0.9",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "preview": "vite preview",
+    "prepare": "pnpm run build",
+    "clean:dist": "rimraf dist/",
+    "build": "pnpm run clean:dist && vite build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-compress": "^2.1.1",
+    "vite-plugin-compression2": "^0.11.0",
+    "vite-plugin-dts": "^3.6.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./dist/": {
+      "import": "./dist/",
+      "require": "./dist/"
+    }
+  },
+  "license": "MIT"
+}
