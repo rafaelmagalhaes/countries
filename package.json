@@ -1,12 +1,21 @@
 {
   "name": "@rrrm/countries",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "preview": "vite preview",
     "prepare": "pnpm run build",
-    "build": "vite build"
+    "clean:dist": "rimraf dist/",
+    "build": "pnpm run clean:dist && vite build"
+  },
+  "author": {
+    "name": "Rafael Magalhaes",
+    "email": "rafaelmagalhaes93@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rafaelmagalhaes/countries"
   },
   "devDependencies": {
     "@types/node": "^20.8.9",
