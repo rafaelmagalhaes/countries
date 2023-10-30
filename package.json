@@ -1,13 +1,12 @@
 {
   "name": "@rrrm/countries",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "preview": "vite preview",
     "prepare": "pnpm run build",
-    "clean:dist": "rimraf dist/",
-    "build": "pnpm run clean:dist && vite build"
+    "build": "vite build"
   },
   "devDependencies": {
     "@types/node": "^20.8.9",
