@@ -1,6 +1,6 @@
 {
   "name": "@rrrm/countries",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -17,6 +17,17 @@
     "type": "git",
     "url": "https://github.com/rafaelmagalhaes/countries"
   },
+  "description": "a list of countries and cities based on JSON file",
+  "keywords": [
+    "cities",
+    "json",
+    "countries",
+    "country",
+    "city",
+    "csv",
+    "sql",
+    "flags"
+  ],
   "devDependencies": {
     "@types/node": "^20.8.9",
     "rimraf": "^5.0.5",

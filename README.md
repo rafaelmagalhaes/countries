@@ -91,3 +91,6 @@ There is also csv files of both countries and cities this is to make it easier t
 ## License
 
 This utility is provided under the [MIT License](LICENSE).
+
+## Credits
+this package is a comnbination of both [restcountries](https://gitlab.com/restcountries/restcountries) and [cities.json](https://github.com/lutangar/cities.json/tree/master)
