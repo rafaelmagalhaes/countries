@@ -16,7 +16,7 @@ jobs:
           node-version: 18
           registry-url: https://registry.npmjs.org/   
           version: 8.9.1
-      - run: export NODE_OPTIONS="--max_old_space_size=4096"    
+      - run: export NODE_OPTIONS="--max_old_space_size=8096"    
       - run: pnpm i    
       - run: npm publish --access=public
         env:
