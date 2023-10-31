@@ -7,7 +7,7 @@
     "preview": "vite preview",
     "prepare": "pnpm run build",
     "clean:dist": "rimraf dist/",
-    "build": "pnpm run clean:dist && vite build"
+    "build": "cross-env NODE_OPTIONS=--max-old-space-size=8192 pnpm run clean:dist && vite build"
   },
   "author": {
     "name": "Rafael Magalhaes",
@@ -30,6 +30,7 @@
   ],
   "devDependencies": {
     "@types/node": "^20.8.9",
+    "cross-env": "^7.0.3",
     "rimraf": "^5.0.5",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
