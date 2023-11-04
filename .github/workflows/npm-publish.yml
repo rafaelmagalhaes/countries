@@ -17,7 +17,6 @@ jobs:
           registry-url: "https://registry.npmjs.org/"
           version: 8.9.1
       - run: pnpm i
-      - run: npm login
+      - run: npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - run: npm publish --access=public
