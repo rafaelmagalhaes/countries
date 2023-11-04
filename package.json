@@ -1,13 +1,13 @@
 {
   "name": "@rrrm/countries",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "preview": "vite preview",
-    "prepare": "pnpm run build",
+    "prepare": "npm run build",
     "clean:dist": "rimraf dist/",
-    "build": "pnpm run clean:dist && tsup"
+    "build": "npm run clean:dist && tsup"
   },
   "author": {
     "name": "Rafael Magalhaes",
