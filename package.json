@@ -1,6 +1,6 @@
 {
   "name": "@rrrm/countries",
-  "version": "0.0.23",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
