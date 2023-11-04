@@ -1,13 +1,13 @@
 {
   "name": "@rrrm/countries",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "preview": "vite preview",
     "prepare": "pnpm run build",
     "clean:dist": "rimraf dist/",
-    "build": "cross-env NODE_OPTIONS=--max-old-space-size=8192 pnpm run clean:dist && vite build"
+    "build": "pnpm run clean:dist && tsup"
   },
   "author": {
     "name": "Rafael Magalhaes",
@@ -31,7 +31,10 @@
   "devDependencies": {
     "@types/node": "^20.8.9",
     "cross-env": "^7.0.3",
+    "eslint": "^8.53.0",
+    "prettier": "^3.0.3",
     "rimraf": "^5.0.5",
+    "tsup": "^7.2.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vite-plugin-compress": "^2.1.1",
@@ -54,5 +57,10 @@
       "require": "./dist/"
     }
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "jsonminify": "^0.4.2",
+    "mjson": "^0.4.2"
+  }
 }
